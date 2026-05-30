@@ -17,6 +17,7 @@ from routes.update_status import init_update_status_routes
 from routes.gpu_screens import init_gpu_screens_routes
 from routes.vpinfe import init_vpinfe_routes
 from routes.gpu_actions import init_gpu_actions_routes
+from routes.firstrun import init_firstrun_routes
 from pathlib import Path
 from datetime import datetime
 import socket
@@ -1596,17 +1597,9 @@ def firstrun_action(action):
     except Exception as e:
         return jsonify({"ok": False, "error": str(e)}), 500
 
-@app.route("/first-run/popup-disable", methods=["POST"])
-def firstrun_popup_disable():
-    cfg = firstrun_load_cfg()
-    required = ["updates", "network", "gpu", "screens", "audio"]
-    if not all(cfg.get(k) for k in required):
-        cfg["show_popup"] = True
-        firstrun_save_cfg(cfg)
-        return jsonify({"ok": False, "error": "Les 5 étapes First Run doivent être complétées avant de désactiver le popup."}), 403
-    cfg["show_popup"] = False
-    firstrun_save_cfg(cfg)
-    return jsonify({"ok": True})
+# === Modular route: first-run popup disable - PinCabOS START ===
+init_firstrun_routes(app, firstrun_load_cfg, firstrun_save_cfg)
+# === Modular route: first-run popup disable - PinCabOS END ===
 
 @app.route("/first-run/save", methods=["POST"])
 def firstrun_save():
