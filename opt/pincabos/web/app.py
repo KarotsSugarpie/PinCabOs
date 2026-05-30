@@ -13,6 +13,7 @@ from werkzeug.utils import secure_filename
 from dashboard_plus import render_dashboard
 from flask import Flask, redirect, url_for, jsonify, request
 from routes.version import init_version_routes
+from routes.update_status import init_update_status_routes
 from pathlib import Path
 from datetime import datetime
 import socket
@@ -5131,9 +5132,9 @@ setInterval(refreshStatus, 2000);
     return page("Mises à jour", body)
 
 
-@app.route("/api/update-status")
-def api_update_status():
-    return jsonify(get_job_status())
+# === Modular route: update status - PinCabOS START ===
+init_update_status_routes(app, get_job_status)
+# === Modular route: update status - PinCabOS END ===
 
 @app.route("/run-update/<target>", methods=["POST"])
 def run_update(target):
