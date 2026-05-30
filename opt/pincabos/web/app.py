@@ -1598,20 +1598,10 @@ def firstrun_action(action):
         return jsonify({"ok": False, "error": str(e)}), 500
 
 # === Modular route: first-run popup disable - PinCabOS START ===
-init_firstrun_routes(app, firstrun_load_cfg, firstrun_save_cfg)
+init_firstrun_routes(app, firstrun_load_cfg, firstrun_save_cfg, firstrun_default_cfg)
 # === Modular route: first-run popup disable - PinCabOS END ===
 
-@app.route("/first-run/save", methods=["POST"])
-def firstrun_save():
-    cfg = firstrun_default_cfg()
-    for key in ["updates", "network", "gpu", "screens", "audio"]:
-        cfg[key] = request.form.get(key) == "1"
-    if all(cfg.get(k) for k in ["updates", "network", "gpu", "screens", "audio"]):
-        cfg["show_popup"] = request.form.get("show_popup") == "1"
-    else:
-        cfg["show_popup"] = True
-    firstrun_save_cfg(cfg)
-    return redirect("/first-run")
+# route /first-run/save moved to routes/firstrun.py
 # === FIRST RUN WIZARD - PINCABOS END ===
 
 
