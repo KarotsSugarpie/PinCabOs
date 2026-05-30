@@ -14,6 +14,7 @@ from dashboard_plus import render_dashboard
 from flask import Flask, redirect, url_for, jsonify, request
 from routes.version import init_version_routes
 from routes.update_status import init_update_status_routes
+from routes.gpu_screens import init_gpu_screens_routes
 from pathlib import Path
 from datetime import datetime
 import socket
@@ -2132,9 +2133,9 @@ def pincabos_write_manual_screen_roles(playfield_id, backglass_id, fulldmd_id):
 
     return layout
 
-@app.route("/gpu/screens")
-def gpu_screens_page():
-    return redirect(url_for("gpu_page"), code=302)
+# === Modular route: GPU screens redirect - PinCabOS START ===
+init_gpu_screens_routes(app)
+# === Modular route: GPU screens redirect - PinCabOS END ===
 
 
 @app.route("/gpu/apply-screens", methods=["POST"])
