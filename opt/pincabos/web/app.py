@@ -12,6 +12,7 @@ import shlex
 from werkzeug.utils import secure_filename
 from dashboard_plus import render_dashboard
 from flask import Flask, redirect, url_for, jsonify, request
+from routes.version import init_version_routes
 from pathlib import Path
 from datetime import datetime
 import socket
@@ -450,6 +451,11 @@ def safe_file_text(path, fallback=""):
         return f"Erreur lecture {path}: {e}"
     return fallback
 
+
+
+# === Modular routes registration - PinCabOS START ===
+init_version_routes(app, pincabos_version)
+# === Modular routes registration - PinCabOS END ===
 
 def pincabos_support_footer_html():
     import json
@@ -8286,9 +8292,6 @@ def audio_ssf_commander_defaults():
 # === SSF COMMANDER V1 - PINCABOS END ===
 
 
-@app.route("/api/pincabos-version")
-def api_pincabos_version():
-    return jsonify(pincabos_version())
 
 @app.route("/dev/login", methods=["POST"])
 def pincabos_dev_login():
