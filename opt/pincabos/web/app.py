@@ -15,6 +15,7 @@ from flask import Flask, redirect, url_for, jsonify, request
 from routes.version import init_version_routes
 from routes.update_status import init_update_status_routes
 from routes.gpu_screens import init_gpu_screens_routes
+from routes.vpinfe import init_vpinfe_routes
 from pathlib import Path
 from datetime import datetime
 import socket
@@ -2431,15 +2432,9 @@ def gpu_apply_vpx():
     return page("GPU", body)
 
 
-@app.route("/restart-vpinfe", methods=["POST"])
-def restart_vpinfe():
-    subprocess.Popen(
-        ["/usr/bin/sudo", "/bin/systemctl", "restart", "pincabos-frontend.service"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        start_new_session=True,
-    )
-    return redirect(url_for("gpu_page"))
+# === Modular route: restart VPinFE - PinCabOS START ===
+init_vpinfe_routes(app)
+# === Modular route: restart VPinFE - PinCabOS END ===
 
 @app.route("/auto-screens", methods=["POST"])
 def auto_screens():
