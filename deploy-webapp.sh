@@ -38,8 +38,28 @@ sudo systemctl restart pincabos-web 2>/dev/null || sudo systemctl restart pincab
 sudo systemctl reload nginx 2>/dev/null || true
 
 echo
-echo "=== 6) Statut services ==="
-systemctl --no-pager --lines=5 status pincabos-web 2>/dev/null || systemctl --no-pager --lines=5 status pincabos 2>/dev/null || true
+echo "=== 6) Attente socket WebApp ==="
+for i in $(seq 1 20); do
+  if [ -S /run/pincabos-web/pincabos-web.sock ]; then
+    echo "Socket prêt."
+    break
+  fi
+  sleep 0.5
+done
+
+echo
+echo "=== 7) Test HTTP local ==="
+for i in $(seq 1 20); do
+  if curl -s -I http://127.0.0.1/ | head -1 | grep -q "200"; then
+    echo "WebApp répond OK."
+    break
+  fi
+  sleep 0.5
+done
+
+echo
+echo "=== 8) Statut services ==="
+systemctl --no-pager --lines=8 status pincabos-web 2>/dev/null || systemctl --no-pager --lines=8 status pincabos 2>/dev/null || true
 
 echo
 echo "=== Déploiement terminé ==="
