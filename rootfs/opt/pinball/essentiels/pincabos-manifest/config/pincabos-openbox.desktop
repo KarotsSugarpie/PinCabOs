@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=PinCabOS Openbox X11
+Comment=PinCabOS X11 session for VPX
+Exec=openbox-session
+Type=Application
+DesktopNames=Openbox

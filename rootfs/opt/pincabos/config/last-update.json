@@ -1,0 +1,11 @@
+{
+  "name": "PinCabOS",
+  "version": "Alpha 1.2",
+  "build": "20260525T161403",
+  "source_url": "https://update.pincabos.cc/updates/pincabos-update-Alpha-1.2-20260525T161403.zip",
+  "force": "false",
+  "installed_at": "2026-05-25T16:44:58-04:00",
+  "backup": "/opt/pincabos/backups/pincabos-updates/before-Alpha 1.2-20260525T161403-20260525-164454",
+  "log": "/opt/pincabos/logs/updates/pincabos-update-20260525-164451.log",
+  "safe_apply": true
+}

@@ -1,0 +1,26 @@
+{
+  "playfield": {
+    "name": "Playfield",
+    "id": 0,
+    "output": "HDMI-0",
+    "mode": "3840x2160",
+    "position": "0x0",
+    "primary": true
+  },
+  "backglass": {
+    "name": "Backglass",
+    "id": 1,
+    "output": "DP-1",
+    "mode": "1920x1080",
+    "position": "3840x0",
+    "primary": false
+  },
+  "dmd": {
+    "name": "DMD",
+    "id": 2,
+    "output": "DP-2",
+    "mode": "1024x768",
+    "position": "5760x0",
+    "primary": false
+  }
+}

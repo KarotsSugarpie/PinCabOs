@@ -1,0 +1,85 @@
+=== PinCabOS Branding copy ===
+Sat May 30 19:41:41 UTC 2026
+
+Source: /mnt/pincabos-nas/PinCabOs/Branding
+Dest  : /opt/pinball/essentiels/pincabos-manifest/branding
+
+=== Fichiers source ===
+/mnt/pincabos-nas/PinCabOs/Branding/PCOSInstLoad.png
+/mnt/pincabos-nas/PinCabOs/Branding/FBBannerXL.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOIconSimple.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOIcon.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOInfo1.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOInfo2.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOWallpaper2.png
+/mnt/pincabos-nas/PinCabOs/Branding/TopBanner.png
+/mnt/pincabos-nas/PinCabOs/Branding/IconB.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOTagName.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOSInstallWP.png
+/mnt/pincabos-nas/PinCabOs/Branding/FBBanner.png
+/mnt/pincabos-nas/PinCabOs/Branding/WelcomeWP.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOLoading.png
+/mnt/pincabos-nas/PinCabOs/Branding/AppIcon.png
+/mnt/pincabos-nas/PinCabOs/Branding/PCOInfo3.png
+/mnt/pincabos-nas/PinCabOs/Branding/IconNames.png
+/mnt/pincabos-nas/PinCabOs/Branding/Wallpaper01.png
+
+sending incremental file list
+./
+AppIcon.png
+         32,768   1%    0.00kB/s    0:00:00        1,694,941 100%   75.48MB/s    0:00:00 (xfr#1, to-chk=17/19)
+FBBanner.png
+         32,768   1%    1.20MB/s    0:00:01        2,059,305 100%   37.05MB/s    0:00:00 (xfr#2, to-chk=16/19)
+FBBannerXL.png
+         32,768   1%  542.37kB/s    0:00:03        1,980,335 100%   22.48MB/s    0:00:00 (xfr#3, to-chk=15/19)
+IconB.png
+         32,768   2%  355.56kB/s    0:00:04        1,502,936 100%   13.27MB/s    0:00:00 (xfr#4, to-chk=14/19)
+IconNames.png
+         32,768   2%  280.70kB/s    0:00:04        1,420,168 100%   10.18MB/s    0:00:00 (xfr#5, to-chk=13/19)
+PCOIcon.png
+         32,768   2%  231.88kB/s    0:00:05        1,355,924 100%    8.34MB/s    0:00:00 (xfr#6, to-chk=12/19)
+PCOIconSimple.png
+         32,768   2%  198.76kB/s    0:00:06        1,285,711 100%    6.97MB/s    0:00:00 (xfr#7, to-chk=11/19)
+PCOInfo1.png
+         32,768   1%  175.82kB/s    0:00:09        1,769,685 100%    8.27MB/s    0:00:00 (xfr#8, to-chk=10/19)
+PCOInfo2.png
+         32,768   1%  152.38kB/s    0:00:12        1,994,187 100%    8.06MB/s    0:00:00 (xfr#9, to-chk=9/19)
+PCOInfo3.png
+         32,768   1%  132.78kB/s    0:00:14        1,912,644 100%    6.83MB/s    0:00:00 (xfr#10, to-chk=8/19)
+PCOLoading.png
+         32,768   2%  117.65kB/s    0:00:09        1,165,091 100%    3.89MB/s    0:00:00 (xfr#11, to-chk=7/19)
+PCOSInstLoad.png
+         32,768   1%  109.59kB/s    0:00:16        1,880,047 100%    5.67MB/s    0:00:00 (xfr#12, to-chk=6/19)
+PCOSInstallWP.png
+         32,768   1%   99.38kB/s    0:00:19        1,933,588 100%    5.31MB/s    0:00:00 (xfr#13, to-chk=5/19)
+PCOTagName.png
+         32,768   3%   90.91kB/s    0:00:11        1,088,517 100%    2.84MB/s    0:00:00 (xfr#14, to-chk=4/19)
+PCOWallpaper2.png
+         32,768   1%   86.49kB/s    0:00:20        1,847,910 100%    4.47MB/s    0:00:00 (xfr#15, to-chk=3/19)
+TopBanner.png
+         32,768   2%   80.00kB/s    0:00:13        1,142,096 100%    2.63MB/s    0:00:00 (xfr#16, to-chk=2/19)
+Wallpaper01.png
+         32,768   1%   76.37kB/s    0:00:22        1,743,775 100%    3.77MB/s    0:00:00 (xfr#17, to-chk=1/19)
+WelcomeWP.png
+         32,768   1%   71.75kB/s    0:00:23        1,703,114 100%    3.47MB/s    0:00:00 (xfr#18, to-chk=0/19)
+
+sent 29,488,420 bytes  received 361 bytes  19,659,187.33 bytes/sec
+total size is 29,479,974  speedup is 1.00
+AppIcon.png
+FBBanner.png
+FBBannerXL.png
+IconB.png
+IconNames.png
+PCOIcon.png
+PCOIconSimple.png
+PCOInfo1.png
+PCOInfo2.png
+PCOInfo3.png
+PCOLoading.png
+PCOSInstLoad.png
+PCOSInstallWP.png
+PCOTagName.png
+PCOWallpaper2.png
+TopBanner.png
+Wallpaper01.png
+WelcomeWP.png

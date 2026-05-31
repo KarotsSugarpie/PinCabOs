@@ -1,0 +1,1 @@
+/opt/pincabos/bin/autoscreen.sh

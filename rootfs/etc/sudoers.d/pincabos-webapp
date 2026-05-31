@@ -1,0 +1,50 @@
+# PinCabOS WebApp sudo permissions
+# Managed by PinCabOS cleanup.
+# WebApp runs as root currently, but these rules keep sudo calls non-interactive and explicit.
+
+root ALL=(root) NOPASSWD: /bin/systemctl start pincabos-frontend.service
+root ALL=(root) NOPASSWD: /bin/systemctl stop pincabos-frontend.service
+root ALL=(root) NOPASSWD: /bin/systemctl restart pincabos-frontend.service
+root ALL=(root) NOPASSWD: /bin/systemctl kill pincabos-frontend.service
+
+root ALL=(root) NOPASSWD: /bin/systemctl restart pincabos-web.service
+root ALL=(root) NOPASSWD: /bin/systemctl start pincabos-web.service
+root ALL=(root) NOPASSWD: /bin/systemctl stop pincabos-web.service
+root ALL=(root) NOPASSWD: /bin/systemctl kill pincabos-web.service
+
+root ALL=(root) NOPASSWD: /bin/systemctl reboot -i
+root ALL=(root) NOPASSWD: /usr/bin/systemctl reboot
+
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/update-vpinfe.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/update-vpx.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/update-system.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/update-all.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/update-gpu-drivers.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/pincabos-apply-update.sh
+
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/firstrun-network-detect.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/auto-detect-screens.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/detect-gpu.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/install-dof-component.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/dof-commander-test-output.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/pincabos-dof-driver-status.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/launch-fulldmd-calibrator.sh
+
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/network-info.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/network-current-mode.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/network-set-dhcp.sh *
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/network-set-static.sh *
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/wifi-scan.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/wifi-join.sh *
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/wifi-hotspot.sh *
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/wifi-hotspot-stop.sh
+
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/close-webapp-screen.sh
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/launch-webapp-screen.sh *
+root ALL=(root) NOPASSWD: /opt/pincabos/tools/change-root-password.sh *
+
+# PinCabOS Console Commander service control
+root ALL=(root) NOPASSWD: /bin/systemctl start pincabos-console.service
+root ALL=(root) NOPASSWD: /bin/systemctl stop pincabos-console.service
+root ALL=(root) NOPASSWD: /bin/systemctl restart pincabos-console.service
+root ALL=(root) NOPASSWD: /bin/systemctl kill pincabos-console.service

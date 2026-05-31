@@ -1,0 +1,1 @@
+/opt/pinball/essentiels/pincabos-manifest/scripts/import-tables-from-nas.sh

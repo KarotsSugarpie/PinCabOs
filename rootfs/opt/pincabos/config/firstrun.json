@@ -1,0 +1,8 @@
+{
+  "show_popup": true,
+  "updates": false,
+  "network": false,
+  "gpu": false,
+  "screens": false,
+  "audio": false
+}

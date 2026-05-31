@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# PinCabOS Openbox autostart - X11 only
+xset -dpms
+xset s off
+xset s noblank
+xsetroot -solid black
+
+# AutoScreen universal:
+# biggest screen = Playfield / ID0 / primary / +0+0
+/opt/pincabos/bin/autoscreen.sh &
+
+sleep 2
+xdotool mousemove 0 0 2>/dev/null || true
+
+# Debug temporaire
+xterm -geometry 120x35+40+40 -title "PinCabOS Debug Console" &

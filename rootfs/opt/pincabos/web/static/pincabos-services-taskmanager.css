@@ -1,0 +1,44 @@
+/* PinCabOs Services Task Manager - icon buttons */
+
+.svc-control-cell {
+  text-align: right !important;
+  white-space: nowrap !important;
+}
+
+.svc-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+.svc-form {
+  display: inline-flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.svc-btn {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+
+  padding: 0 !important;
+  margin: 1px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-size: 15px !important;
+  line-height: 1 !important;
+  font-weight: bold !important;
+
+  border-radius: 8px !important;
+}
+
+.svc-kill {
+  opacity: 0.92 !important;
+}

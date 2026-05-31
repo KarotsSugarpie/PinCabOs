@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "managed_by": "PinCabOS",
+  "mappings": {},
+  "analog": {
+    "enabled": false,
+    "nudge_x": "",
+    "nudge_y": "",
+    "plunger": ""
+  }
+}

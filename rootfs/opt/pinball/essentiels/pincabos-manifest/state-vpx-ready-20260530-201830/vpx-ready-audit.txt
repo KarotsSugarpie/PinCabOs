@@ -1,0 +1,162 @@
+=== PinCabOS state ready for VPX ===
+Sat May 30 20:18:30 UTC 2026
+
+Sat May 30 20:18:30 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060 Ti     Off |   00000000:02:00.0  On |                  N/A |
+|  0%   53C    P8             30W /  220W |     110MiB /   8192MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2592      G   /usr/lib/xorg/Xorg                       67MiB |
++-----------------------------------------------------------------------------------------+
+
+name of display: :0
+display: :0  screen: 0
+direct rendering: Yes
+Memory info (GL_NVX_gpu_memory_info):
+    Dedicated video memory: 8192 MB
+    Total available memory: 8192 MB
+    Currently available dedicated video memory: 7715 MB
+OpenGL vendor string: NVIDIA Corporation
+OpenGL renderer string: NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+OpenGL core profile version string: 4.6.0 NVIDIA 580.159.03
+OpenGL core profile shading language version string: 4.60 NVIDIA
+OpenGL core profile context flags: (none)
+OpenGL core profile profile mask: core profile
+
+OpenGL version string: 4.6.0 NVIDIA 580.159.03
+OpenGL shading language version string: 4.60 NVIDIA
+OpenGL context flags: (none)
+OpenGL profile mask: (none)
+
+OpenGL ES profile version string: OpenGL ES 3.2 NVIDIA 580.159.03
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
+
+
+error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+WARNING: [Loader Message] Code 0 : ICD for selected physical device does not export vkGetPhysicalDeviceDisplayPlanePropertiesKHR!
+WARNING: [Loader Message] Code 0 : ICD for selected physical device does not export vkGetPhysicalDeviceDisplayPropertiesKHR!
+==========
+VULKANINFO
+==========
+
+Vulkan Instance Version: 1.4.341
+
+
+Instance Extensions: count = 27
+-------------------------------
+VK_EXT_acquire_drm_display             : extension revision 1
+VK_EXT_acquire_xlib_display            : extension revision 1
+VK_EXT_debug_report                    : extension revision 10
+VK_EXT_debug_utils                     : extension revision 2
+VK_EXT_direct_mode_display             : extension revision 1
+VK_EXT_display_surface_counter         : extension revision 1
+VK_EXT_headless_surface                : extension revision 1
+VK_EXT_layer_settings                  : extension revision 2
+VK_EXT_surface_maintenance1            : extension revision 1
+VK_EXT_swapchain_colorspace            : extension revision 5
+VK_KHR_device_group_creation           : extension revision 1
+VK_KHR_display                         : extension revision 23
+VK_KHR_external_fence_capabilities     : extension revision 1
+VK_KHR_external_memory_capabilities    : extension revision 1
+VK_KHR_external_semaphore_capabilities : extension revision 1
+VK_KHR_get_display_properties2         : extension revision 1
+VK_KHR_get_physical_device_properties2 : extension revision 2
+VK_KHR_get_surface_capabilities2       : extension revision 1
+VK_KHR_portability_enumeration         : extension revision 1
+VK_KHR_surface                         : extension revision 25
+VK_KHR_surface_maintenance1            : extension revision 1
+VK_KHR_surface_protected_capabilities  : extension revision 1
+VK_KHR_wayland_surface                 : extension revision 6
+VK_KHR_xcb_surface                     : extension revision 6
+VK_KHR_xlib_surface                    : extension revision 6
+VK_LUNARG_direct_driver_loading        : extension revision 1
+VK_NV_display_stereo                   : extension revision 1
+
+Instance Layers: count = 7
+--------------------------
+VK_LAYER_INTEL_nullhw       INTEL NULL HW                                                1.1.73   version 1
+VK_LAYER_MESA_anti_lag      Open-source implementation of the VK_AMD_anti_lag extension. 1.4.303  version 1
+VK_LAYER_MESA_device_select Linux device selection layer                                 1.4.303  version 1
+VK_LAYER_MESA_overlay       Mesa Overlay layer                                           1.4.303  version 1
+VK_LAYER_MESA_screenshot    Mesa Screenshot layer                                        1.4.303  version 1
+VK_LAYER_NV_optimus         NVIDIA Optimus layer                                         1.4.312  version 1
+VK_LAYER_NV_present         NVIDIA GR2608 layer                                          1.4.312  version 1
+
+Devices:
+========
+GPU0:
+	apiVersion         = 1.4.312
+	driverVersion      = 580.159.3.0
+	vendorID           = 0x10de
+	deviceID           = 0x2489
+	deviceType         = PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+	deviceName         = NVIDIA GeForce RTX 3060 Ti
+	driverID           = DRIVER_ID_NVIDIA_PROPRIETARY
+	driverName         = NVIDIA
+	driverInfo         = 580.159.03
+	conformanceVersion = 1.4.1.3
+	deviceUUID         = 959378e4-2056-9615-d4c8-9f7cafd6dfc6
+	driverUUID         = 02d1943b-b572-5849-bc0a-9110d99e29a2
+GPU1:
+	apiVersion         = 1.4.335
+	driverVersion      = 26.0.3
+	vendorID           = 0x10005
+	deviceID           = 0x0000
+	deviceType         = PHYSICAL_DEVICE_TYPE_CPU
+	deviceName         = llvmpipe (LLVM 21.1.8, 256 bits)
+	driverID           = DRIVER_ID_MESA_LLVMPIPE
+	driverName         = llvmpipe
+	driverInfo         = Mesa 26.0.3-1ubuntu1 (LLVM 21.1.8)
+	conformanceVersion = 1.3.1.1
+	deviceUUID         = 6d657361-3236-2e30-2e33-2d3175627500
+	driverUUID         = 6c6c766d-7069-7065-5555-494400000000
+
+Screen 0: minimum 8 x 8, current 6784 x 2160, maximum 32767 x 32767
+HDMI-0 connected primary 3840x2160+0+0 (normal left inverted right x axis y axis) 708mm x 398mm
+   3840x2160     60.00*+  59.94    50.00    29.97    25.00    23.98  
+   1920x1080     60.00    60.00    59.94    50.00    23.98  
+   1680x1050     59.95  
+   1280x1024     60.02  
+   1280x960      60.00  
+   1280x800      59.81  
+   1280x720      60.00    59.94    50.00  
+   1024x768      60.00  
+   800x600       60.32    56.25  
+   720x576       50.00  
+   720x480       59.94  
+   640x480       59.94    59.93  
+DP-0 disconnected (normal left inverted right x axis y axis)
+DP-1 connected 1920x1080+3840+0 (normal left inverted right x axis y axis) 600mm x 340mm
+   1920x1080     60.00*+
+   1680x1050     59.95  
+   1600x900      60.00  
+   1440x900      59.89  
+   1280x1024     60.02  
+   1280x720      60.00  
+   1024x768      60.00  
+   800x600       60.32  
+   640x480       59.94  
+DP-2 connected 1024x768+5760+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768      75.03*+  70.07    60.00  
+   800x600       75.00    72.19    60.32    56.25  
+   640x480       75.00    72.81    59.94  
+DP-3 disconnected (normal left inverted right x axis y axis)
+DP-4 disconnected (normal left inverted right x axis y axis)
+DP-5 disconnected (normal left inverted right x axis y axis)
+
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GlobalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LedWizDefaultMinCommandIntervalMs>10</LedWizDefaultMinCommandIntervalMs>
+  <LedControlMinimumEffectDurationMs>60</LedControlMinimumEffectDurationMs>
+  <LedControlMinimumRGBEffectDurationMs>120</LedControlMinimumRGBEffectDurationMs>
+
+  <IniFilesPath>/home/pinball/.vpinball/directoutputconfig</IniFilesPath>
+  <CabinetConfigFilePattern>/home/pinball/.vpinball/directoutputconfig/cabinet.xml</CabinetConfigFilePattern>
+  <TableMappingFilePattern>/home/pinball/.vpinball/directoutputconfig/tablemappings.xml</TableMappingFilePattern>
+  <ShapeDefinitionFilePattern>/home/pinball/.vpinball/directoutputconfig/DirectOutputShapes.xml</ShapeDefinitionFilePattern>
+
+  <EnableLogging>true</EnableLogging>
+  <ClearLogOnSessionStart>true</ClearLogOnSessionStart>
+  <LogFilePattern>/home/pinball/Share/DirectOutput.log</LogFilePattern>
+</GlobalConfig>

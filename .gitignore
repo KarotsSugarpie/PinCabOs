@@ -1,23 +1,39 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+
+# Logs / temp
 *.log
-.env
-.env.*
+*.tmp
+*.bak
+*.backup-*
+*.bak-*
+*.swp
+
+# Runtime/cache
+.venv/
+node_modules/
+cache/
+downloads/
+
+# Large/user content
+*.vpx
+*.directb2s
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tar.zst
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.vmdk
+
+# Secrets
+console.env
+configtool-api-key.txt
 *.key
 *.pem
-*.crt
-*.p12
-*.pfx
-*password*
-*passwd*
-*token*
-*secret*
-.vscode/
-.idea/
-
-# PinCabOS local backups / broken files
-*.backup-*
-*.broken-*
-*.rollback-*
-*.bak
-*.old

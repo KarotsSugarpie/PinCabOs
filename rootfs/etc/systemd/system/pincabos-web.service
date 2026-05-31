@@ -1,0 +1,17 @@
+[Unit]
+Description=PinCabOS WebApp
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/pincabos/web
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/bin/rm -f /run/pincabos-web.sock
+ExecStart=/opt/pincabos/web/.venv/bin/gunicorn --workers 2 --threads 4 --timeout 120 --umask 000 --bind unix:/run/pincabos-web.sock app:app
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

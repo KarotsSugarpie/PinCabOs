@@ -1,0 +1,66 @@
+Window.SetBackgroundTopColor(0.0, 0.0, 0.0);
+Window.SetBackgroundBottomColor(0.0, 0.0, 0.0);
+
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+
+/* Image de fond PinCabOS */
+bg_image = Image("PCOLoading.png");
+bg_scaled = bg_image.Scale(screen_width, screen_height);
+
+bg_sprite = Sprite(bg_scaled);
+bg_sprite.SetX(0);
+bg_sprite.SetY(0);
+bg_sprite.SetZ(-100);
+
+/*
+  Position de la barre sur l'image PCOLoading.
+  Ajusté pour ton image:
+  - x environ 40%
+  - y environ 72%
+  - largeur environ 19%
+*/
+bar_x = Math.Int(screen_width * 0.400);
+bar_y = Math.Int(screen_height * 0.719);
+bar_width = Math.Int(screen_width * 0.188);
+bar_height = Math.Int(screen_height * 0.0045);
+
+if (bar_height < 4) bar_height = 4;
+
+/* Fond discret par-dessus la barre statique */
+bar_bg_image = Image.Rectangle(bar_width, bar_height, 0.30, 0.00, 0.45, 0.55);
+bar_bg_sprite = Sprite(bar_bg_image);
+bar_bg_sprite.SetX(bar_x);
+bar_bg_sprite.SetY(bar_y);
+bar_bg_sprite.SetZ(20);
+
+/* Barre dynamique orange */
+bar_fg_image = Image.Rectangle(1, bar_height, 1.00, 0.34, 0.00, 1.00);
+bar_fg_sprite = Sprite(bar_fg_image);
+bar_fg_sprite.SetX(bar_x);
+bar_fg_sprite.SetY(bar_y);
+bar_fg_sprite.SetZ(21);
+
+/* Petit point lumineux au bout */
+dot_size = Math.Int(screen_height * 0.009);
+if (dot_size < 8) dot_size = 8;
+
+dot_image = Image.Rectangle(dot_size, dot_size, 1.00, 0.28, 0.00, 1.00);
+dot_sprite = Sprite(dot_image);
+dot_sprite.SetZ(22);
+dot_sprite.SetY(bar_y - Math.Int(dot_size / 3));
+
+fun boot_progress_callback(duration, progress) {
+    if (progress < 0) progress = 0;
+    if (progress > 1) progress = 1;
+
+    current_width = Math.Int(bar_width * progress);
+    if (current_width < 1) current_width = 1;
+
+    new_fg = Image.Rectangle(current_width, bar_height, 1.00, 0.34, 0.00, 1.00);
+    bar_fg_sprite.SetImage(new_fg);
+
+    dot_sprite.SetX(bar_x + current_width - Math.Int(dot_size / 2));
+}
+
+Plymouth.SetBootProgressFunction(boot_progress_callback);

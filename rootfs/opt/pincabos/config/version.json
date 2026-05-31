@@ -1,0 +1,10 @@
+{
+  "name": "PinCabOS",
+  "version": "Alpha 1.4",
+  "tag": "alpha14",
+  "build": "20260531T025844",
+  "channel": "alpha",
+  "codename": "Jarvis Pinforge",
+  "architecture": "x86_64",
+  "managed_by": "PinCabOS"
+}

@@ -1,0 +1,45 @@
+#!/bin/bash
+
+ORANGE=$'\033[38;5;208m'
+PURPLE=$'\033[38;5;93m'
+CYAN=$'\033[38;5;51m'
+WHITE=$'\033[1;37m'
+GRAY=$'\033[38;5;245m'
+RESET=$'\033[0m'
+
+echo
+
+perl -CS -Mutf8 -e '
+binmode(STDOUT, ":utf8");
+
+my $orange = "\033[38;5;208m";
+my $purple = "\033[38;5;93m";
+my $reset  = "\033[0m";
+
+my @logo = (
+"██████╗ ██╗███╗   ██╗ ██████╗ █████╗ ██████╗  ██████╗ ███████╗",
+"██╔══██╗██║████╗  ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔════╝",
+"██████╔╝██║██╔██╗ ██║██║     ███████║██████╔╝██║   ██║███████╗",
+"██╔═══╝ ██║██║╚██╗██║██║     ██╔══██║██╔══██╗██║   ██║╚════██║",
+"██║     ██║██║ ╚████║╚██████╗██║  ██║██████╔╝╚██████╔╝███████║",
+"╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝"
+);
+
+for my $line (@logo) {
+    $line =~ s/(█+)/$orange$1$reset/g;
+    $line =~ s/([╔╗╚╝═║]+)/$purple$1$reset/g;
+    print "$line\n";
+}
+'
+
+echo
+printf "${ORANGE}             Ultimate VPinball Linux Cabinet System${RESET}\n"
+printf "${CYAN}             VPX  •  VPinFE  •  DOF  •  WebApp${RESET}\n"
+echo
+printf "${PURPLE}================================================================${RESET}\n"
+printf "${GRAY} Hostname :${RESET} %s\n" "$(hostname)"
+printf "${GRAY} Kernel   :${RESET} %s\n" "$(uname -r)"
+printf "${GRAY} IP       :${RESET} %s\n" "$(hostname -I | awk '{print $1}')"
+printf "${GRAY} User     :${RESET} %s\n" "$(whoami)"
+printf "${PURPLE}================================================================${RESET}\n"
+echo

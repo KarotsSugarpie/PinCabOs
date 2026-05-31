@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=PinCabOS
+Description=PinCabOS boot splash with dynamic loading bar
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/pincabos
+ScriptFile=/usr/share/plymouth/themes/pincabos/pincabos.script

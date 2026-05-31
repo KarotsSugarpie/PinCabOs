@@ -1,0 +1,40 @@
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+
+background_image = Image("pincabos.png");
+background_image = background_image.Scale(screen_width, screen_height);
+
+background_sprite = Sprite(background_image);
+background_sprite.SetX(0);
+background_sprite.SetY(0);
+background_sprite.SetZ(-100);
+
+bar_width = screen_width * 0.193;
+bar_height = 6;
+bar_x = (screen_width - bar_width) / 2;
+bar_y = screen_height * 0.728;
+
+box_image = Image("progress_box.png");
+bar_image = Image("progress_bar.png");
+
+box_sprite = Sprite(box_image.Scale(bar_width, bar_height));
+box_sprite.SetX(bar_x);
+box_sprite.SetY(bar_y);
+box_sprite.SetZ(10);
+
+bar_sprite = Sprite(bar_image.Scale(1, bar_height));
+bar_sprite.SetX(bar_x);
+bar_sprite.SetY(bar_y);
+bar_sprite.SetZ(11);
+
+fun boot_progress_callback(duration, progress) {
+    if (progress < 0) progress = 0;
+    if (progress > 1) progress = 1;
+
+    current_width = bar_width * progress;
+    if (current_width < 1) current_width = 1;
+
+    bar_sprite.SetImage(bar_image.Scale(current_width, bar_height));
+}
+
+Plymouth.SetBootProgressFunction(boot_progress_callback);

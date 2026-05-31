@@ -1,0 +1,1 @@
+/opt/pinball/essentiels/pincabos-manifest/scripts/autoscreen.sh

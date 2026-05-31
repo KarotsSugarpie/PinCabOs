@@ -1,0 +1,18 @@
+{
+  "audio_mode": "dual",
+  "audio_backend": "alsa",
+  "backbox_device": "hw:1,0",
+  "playfield_device": "hw:1,2",
+  "surround_device": "",
+  "bass_device": "",
+  "ssf_mode": "2.1",
+  "invert_lr": false,
+  "invert_front_rear": false,
+  "enable_bass": false,
+  "night_mode": false,
+  "_pincabos_meta": {
+    "modified_at": "2026-05-18 01:02:42",
+    "modified_by": "PinCabOS",
+    "function": "Audio / SSF V2 Save"
+  }
+}

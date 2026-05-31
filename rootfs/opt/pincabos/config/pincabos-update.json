@@ -1,0 +1,8 @@
+{
+  "name": "PinCabOS",
+  "channel": "main",
+  "latest_json_url": "https://update.pincabos.cc/updates/latest.json",
+  "download_dir": "/opt/pincabos/updates",
+  "backup_dir": "/opt/pincabos/backups/pincabos-updates",
+  "auto_reboot_after_update": true
+}

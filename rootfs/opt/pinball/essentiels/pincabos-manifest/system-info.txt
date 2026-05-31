@@ -1,0 +1,54 @@
+=== PinCabOS manifest essentiels ===
+Sat May 30 19:36:40 UTC 2026
+
+=== OS ===
+Distributor ID:	Ubuntu
+Description:	Ubuntu 26.04 LTS
+Release:	26.04
+Codename:	resolute
+
+=== Kernel ===
+Linux PinCabOs 7.0.0-22-generic #22-Ubuntu SMP PREEMPT_DYNAMIC Mon May 25 15:54:34 UTC 2026 x86_64 GNU/Linux
+
+=== Hostname ===
+ Static hostname: PinCabOs
+       Icon name: computer-desktop
+         Chassis: desktop 🖥️
+      Machine ID: 12744f4073de46efa8b35a4ddd8aca01
+         Boot ID: 28b29f69b7d7445fb692c6d0d631ca5e
+    Product UUID: 03000200-0400-0500-0006-000700080009
+Operating System: Ubuntu 26.04 LTS
+          Kernel: Linux 7.0.0-22-generic
+    Architecture: x86-64
+ Hardware Vendor: INTEL
+  Hardware Model: X99
+ Hardware Serial: Default string
+Firmware Version: 5.11
+   Firmware Date: Wed 2024-03-06
+    Firmware Age: 2y 2month 3w 3d
+
+=== Architecture ===
+amd64
+
+=== GPU / Audio ===
+00:1b.0 Audio device: Intel Corporation C610/X99 series chipset HD Audio Controller (rev 05)
+02:00.0 VGA compatible controller: NVIDIA Corporation GA104 [GeForce RTX 3060 Ti Lite Hash Rate] (rev a1)
+02:00.1 Audio device: NVIDIA Corporation GA104 High Definition Audio Controller (rev a1)
+05:00.0 Multimedia audio controller: C-Media Electronics Inc CMI8738/CMI8768 PCI Audio (rev 10)
+
+=== USB ===
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 8087:800a Intel Corp. Hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 002: ID fafa:00f0 GGG LED-Wiz
+Bus 002 Device 003: ID 413c:2514 Dell Computer Corp. Dell Universal Receiver
+Bus 002 Device 004: ID 2e8a:106f L'atelier d'Arnoz DudesCab
+Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 002: ID 8087:8002 Intel Corp. 8 channel internal hub
+
+=== Python ===
+Python 3.14.4
+
+=== Chrome ===
+Google Chrome 148.0.7778.215 

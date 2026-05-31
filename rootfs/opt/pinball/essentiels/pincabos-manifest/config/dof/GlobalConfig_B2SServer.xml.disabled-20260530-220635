@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GlobalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CabinetConfigFilePattern>/home/pinball/.local/share/VPinballX/10.8/directoutputconfig/cabinet.xml</CabinetConfigFilePattern>
+  <IniFilesPath>/home/pinball/.local/share/VPinballX/10.8/directoutputconfig</IniFilesPath>
+  <ShapeDefinitionFilePattern>/home/pinball/.local/share/VPinballX/10.8/directoutputconfig/DirectOutputShapes.xml</ShapeDefinitionFilePattern>
+  <TableMappingFilePattern>/home/pinball/.local/share/VPinballX/10.8/directoutputconfig/tablemappings.xml</TableMappingFilePattern>
+  <EnableLogging>true</EnableLogging>
+  <ClearLogOnSessionStart>true</ClearLogOnSessionStart>
+  <LogFilePattern>/home/pinball/Share/DirectOutput.log</LogFilePattern>
+</GlobalConfig>

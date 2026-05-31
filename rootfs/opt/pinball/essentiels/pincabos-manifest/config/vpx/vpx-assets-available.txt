@@ -1,0 +1,17 @@
+Developer.VPinballX_GL-10.8.0-2051-28dd6c3-Release-win-x86.zip
+Developer.VPinballX_GL-10.8.0-2051-28dd6c3-Release-win-x64.zip
+Developer.VPinballX_GL-10.8.0-2051-28dd6c3-Debug-win-x86.zip
+Developer.VPinballX_GL-10.8.0-2051-28dd6c3-Debug-win-x64.zip
+Developer.VPinballX-10.8.0-2051-28dd6c3-Release-win-x86.zip
+Developer.VPinballX-10.8.0-2051-28dd6c3-Release-win-x64.zip
+Developer.VPinballX-10.8.0-2051-28dd6c3-Debug-win-x86.zip
+Developer.VPinballX-10.8.0-2051-28dd6c3-Debug-win-x64.zip
+Main.Download.Minimal.-.VPinballX80_Minimal.zip
+VPinballX_GL-10.8.0-2052-5a81d4e-Release-macos-x64.zip
+VPinballX_GL-10.8.0-2052-5a81d4e-Release-macos-arm64.zip
+VPinballX_GL-10.8.0-2052-5a81d4e-Release-linux-x64.zip
+VPinballX_GL-10.8.0-2052-5a81d4e-Release-linux-aarch64-rpi.zip
+VPinballX_GL-10.8.0-2052-5a81d4e-Release-ios-arm64.zip
+VPinballX_GL-10.8.0-2052-5a81d4e-Release-android-arm64-v8a.zip
+VPinballX_GL-10.8.0-2053-fb1e1dd-Release-android-legacy-arm64-v8a.zip
+Main.Download.Installer.-.VPX8setup.exe

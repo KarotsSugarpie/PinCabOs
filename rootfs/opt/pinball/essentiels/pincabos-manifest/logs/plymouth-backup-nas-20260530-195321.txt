@@ -1,0 +1,44 @@
+=== PinCabOS Plymouth backup NAS ===
+Sat May 30 19:53:23 UTC 2026
+
+Source theme: /usr/share/plymouth/themes/pincabos
+NAS dest    : /mnt/pincabos-nas/PinCabOs/Branding/plymouth
+Manifest    : /opt/pinball/essentiels/pincabos-manifest/plymouth-validated
+
+=== Default Plymouth ===
+/usr/share/plymouth/themes/pincabos/pincabos.plymouth
+
+=== GRUB ===
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+=== Theme files ===
+PCOLoading.png
+pincabos.plymouth
+pincabos.plymouth.backup-20260523-021513
+pincabos.png
+pincabos.png.backup-20260523-022333
+pincabos.script
+pincabos.script.backup-20260523-021513
+pincabos.script.backup-compatible-20260523-022112
+pincabos.script.backup-linepos-20260523-022714
+progress_bar.png
+progress_box.png
+
+=== NAS files ===
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/backups/plymouth-before-20260530-195321.tar.gz
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/default-plymouth-target.txt
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/grub-cmdline.txt
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/grub.default
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/pincabos-plymouth-validated-20260530-195321.tar.gz
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/restore-pincabos-plymouth.sh
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/PCOLoading.png
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.plymouth
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.plymouth.backup-20260523-021513
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.png
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.png.backup-20260523-022333
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.script
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.script.backup-20260523-021513
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.script.backup-compatible-20260523-022112
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/pincabos.script.backup-linepos-20260523-022714
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/progress_bar.png
+/mnt/pincabos-nas/PinCabOs/Branding/plymouth/theme/progress_box.png

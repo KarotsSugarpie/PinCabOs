@@ -1,0 +1,28 @@
+#!/bin/sh
+ORANGE='\033[38;5;208m'
+CYAN='\033[38;5;51m'
+WHITE='\033[1;37m'
+RESET='\033[0m'
+
+echo
+printf "${ORANGE}"
+cat <<'ASCII'
+██████╗ ██╗███╗   ██╗ ██████╗ █████╗ ██████╗  ██████╗ ███████╗
+██╔══██╗██║████╗  ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔════╝
+██████╔╝██║██╔██╗ ██║██║     ███████║██████╔╝██║   ██║███████╗
+██╔═══╝ ██║██║╚██╗██║██║     ██╔══██║██╔══██╗██║   ██║╚════██║
+██║     ██║██║ ╚████║╚██████╗██║  ██║██████╔╝╚██████╔╝███████║
+╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝
+ASCII
+printf "${RESET}"
+echo
+printf "${WHITE}             Ultimate VPinball Linux Cabinet System${RESET}\n"
+printf "${CYAN}             VPX  •  VPinFE  •  DOF  •  WebApp${RESET}\n"
+echo
+printf "${ORANGE}================================================================${RESET}\n"
+printf " Hostname : %s\n" "$(hostname)"
+printf " Kernel   : %s\n" "$(uname -r)"
+printf " IP       : %s\n" "$(hostname -I | awk '{print $1}')"
+printf " User     : %s\n" "$(whoami)"
+printf "${ORANGE}================================================================${RESET}\n"
+echo

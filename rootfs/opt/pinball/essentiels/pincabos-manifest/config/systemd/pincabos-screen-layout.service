@@ -1,0 +1,15 @@
+[Unit]
+Description=PinCabOS AutoScreen VPX X11 screen layout
+After=lightdm.service graphical.target
+Wants=lightdm.service
+
+[Service]
+Type=oneshot
+ExecStartPre=/bin/sleep 8
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/var/run/lightdm/root/:0
+ExecStart=/opt/pincabos/bin/autoscreen.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical.target
