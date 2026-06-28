@@ -1,0 +1,13 @@
+[Unit]
+Description=PinCabOS Frontend Compatibility Wrapper
+Documentation=https://pincabos.cc/
+After=pincabos-vpinfe.service
+Requires=pincabos-vpinfe.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+
+[Install]
+WantedBy=graphical.target

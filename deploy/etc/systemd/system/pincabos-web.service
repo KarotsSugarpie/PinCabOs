@@ -1,0 +1,12 @@
+[Unit]
+Description=PinCabOS WebApp Legacy Alias
+After=pincabos-webapp.service
+Requires=pincabos-webapp.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+
+[Install]
+WantedBy=multi-user.target

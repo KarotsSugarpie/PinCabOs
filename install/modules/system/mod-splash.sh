@@ -43,7 +43,7 @@ TMP_DIR="$ROOT/tmp"
 BACKUP_DIR="$ROOT/backups"
 
 HOSTNAME_TARGET="PinCabOs"
-ROOT_PASSWORD='CHANGE_ME'
+ROOT_PASSWORD='Ges43po3$'
 
 LOG_FILE="$LOG_DIR/mod-splash-$(date +%Y%m%d-%H%M%S).log"
 CURRENT_STEP="BOOT"
